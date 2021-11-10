@@ -1,0 +1,23 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - "saurav/workflow"
+  workflow_dispatch:
+    
+jobs:
+  Build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Setup Java
+        uses: actions/setup-java@v2
+        with: 
+          java-version: '11'
+          distribution: 'adopt'
+
+      - name: Setup node
+        uses: actions/setup-node@v2

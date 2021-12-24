@@ -1,9 +1,9 @@
-name: for master
+name: for prod
 
 on:
   push:
     branches:
-      - "master"
+      - "prod"
 
   workflow_dispatch:
 

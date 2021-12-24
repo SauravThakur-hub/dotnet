@@ -1,4 +1,4 @@
-name: for prod
+name: for prod main
 
 on:
   push:

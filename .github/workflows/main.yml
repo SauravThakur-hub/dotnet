@@ -1,4 +1,4 @@
-name: testing secrets
+name: for master
 
 on:
   push:

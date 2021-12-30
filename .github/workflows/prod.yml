@@ -1,10 +1,6 @@
 name: for master
 
 on:
-  push:
-    branches:
-      - "master"
-
   workflow_dispatch:
 
 jobs:
@@ -13,6 +9,8 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+        with:
+          ref: prod
 
       - name: echo secrets
-        run: echo ${{ secrets.USER_NAME }}        
+        run: echo "prod"

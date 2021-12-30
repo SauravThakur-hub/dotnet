@@ -1,0 +1,14 @@
+name: for master
+
+on:
+  workflow_dispatch:
+
+jobs:
+  display_secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: echo secrets
+        run: echo ${{ secrets.USER_NAME }}        

@@ -3,7 +3,7 @@ name: for dev
 on:
   push:
     branches:
-      - "dev"
+      - dev
 
   workflow_dispatch:
 

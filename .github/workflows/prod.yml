@@ -3,7 +3,7 @@ name: for prod
 on:
   push:
     branches:
-      - "prod"
+      - prod
 
   workflow_dispatch:
 

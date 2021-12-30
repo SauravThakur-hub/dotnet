@@ -1,4 +1,4 @@
-name: for master
+name: for prod
 
 on:
   workflow_dispatch:

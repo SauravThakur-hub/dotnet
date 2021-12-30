@@ -1,0 +1,19 @@
+name: for dev
+
+on:
+  push:
+    branches:
+      - dev
+
+
+jobs:
+  display_secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          ref: dev
+
+      - name: echo secrets
+        run: echo "dev"

@@ -1,8 +1,11 @@
 name: for master
 
 on:
+  push:
+    branches:
+      - master
   schedule:
-    - cron:  '* * * * *'
+    - cron:  '30 * * * *'
 
   workflow_dispatch:
 
